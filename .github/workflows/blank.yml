@@ -17,6 +17,8 @@ jobs:
     permissions:
       id-token: write
       contents: read
+    environment:
+      name: 'Production'
     steps:
       - name: Azure login
         uses: azure/login@v1
